@@ -41,8 +41,6 @@ void setup() {
   for (int i = 0; i < boom.length; i++) {
     boom[i] = new particle();
   }
-}
-firework pew = new firework();
 void draw() {
   noStroke();
   frameRate(600);
@@ -54,11 +52,6 @@ void draw() {
     boom[i].move();
     boom[i].show();
   }
-}
-
-class OddballParticle //inherits from Particle
-{
-	//your code here
 }
 
 
