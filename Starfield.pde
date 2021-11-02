@@ -41,6 +41,7 @@ void setup() {
   for (int i = 0; i < boom.length; i++) {
     boom[i] = new particle();
   }
+ }
 void draw() {
   noStroke();
   fill(0, 0, 0, 15);
