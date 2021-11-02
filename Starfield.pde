@@ -37,15 +37,12 @@ void mousePressed() {
 particle[] boom = new particle[200];
 void setup() {
   size (800, 800);
-  background(0);
+  background(0, 0, 0);
   for (int i = 0; i < boom.length; i++) {
     boom[i] = new particle();
   }
 void draw() {
   noStroke();
-  frameRate(144);
-  //pew.show();
-  //pew.move();
   fill(0, 0, 0, 15);
   rect(0, 0, 800, 800);
   for (int i = 0; i < boom.length; i++) {
