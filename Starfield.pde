@@ -2,8 +2,8 @@ class particle {
   double myX, myY, mySize, speed, myAngle;
   int myColor;
   particle() {
-    myX = 500.0;
-    myY = 500.0;
+    myX = 400.0;
+    myY = 400.0;
     myAngle = Math.random()* 2 * Math.PI;
     mySize = 1;
     speed = Math.random()*10;
@@ -36,7 +36,7 @@ void mousePressed() {
 }
 particle[] boom = new particle[200];
 void setup() {
-  size (1000, 1000);
+  size (800, 800);
   background(0);
   for (int i = 0; i < boom.length; i++) {
     boom[i] = new particle();
@@ -47,7 +47,7 @@ void draw() {
   //pew.show();
   //pew.move();
   fill(0, 0, 0, 15);
-  rect(0, 0, 1000, 1000);
+  rect(0, 0, 800, 800);
   for (int i = 0; i < boom.length; i++) {
     boom[i].move();
     boom[i].show();
