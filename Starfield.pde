@@ -43,7 +43,7 @@ void setup() {
   }
 void draw() {
   noStroke();
-  frameRate(600);
+  frameRate(144);
   //pew.show();
   //pew.move();
   fill(0, 0, 0, 15);
