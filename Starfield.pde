@@ -35,20 +35,21 @@ void mousePressed() {
     boom[i].reset();
   pew.reset();
 }
-particle[] boom = new particle[200];
+particle[] boom = new particle[201];
+
+firework pew = new firework();
+
 void setup() {
   size (1000, 1000);
   background(0);
-  for (int i = 0; i < boom.length; i++) {
+  for (int i = 0; i < boom.length-1; i++) {
     boom[i] = new particle();
+    boom[201] = new firework();
   }
 }
-firework pew = new firework();
 void draw() {
   noStroke();
   frameRate(144);
-  pew.show();
-  pew.move();
   fill(0, 0, 0, 15);
   rect(0, 0, 1000, 1000);
   for (int i = 0; i < boom.length; i++) {
