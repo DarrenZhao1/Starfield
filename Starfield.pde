@@ -37,7 +37,6 @@ void mousePressed() {
 }
 particle[] boom = new particle[201];
 
-firework pew = new firework();
 
 void setup() {
   size (1000, 1000);
